@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+   <!--
+    CA2 Registration Page
+    Author: Bryan Ng
+    Date:   30 June 2020
+
+    Filename: registration.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   <title>Applied AI & Analytics Training and Consultancy</title>   
+   <link href="CSS_files/registration.css" rel="stylesheet" />
+   <script src="JS_Files/formValidate.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" >
+            <img class="img-fluid" src="FED_Pictures/home.png" 
+            alt="Applied AI & Analytics Training & Consultancy" >
+         </a>
+    </header>
+
+    <ul class="nav nav-tabs bg-dark sticky-top">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="about_us.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active bg-light" href="registration.html">Registration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contact_us.html">Contact Us</a>
+        </li>
+    </ul>
+
+    
+    <h1 class="text-center">Registration</h1>
+
+   <section class="pb-5">
+      <form id="registration" action="http://www.example.com/AI/registration" method="post">
+         <fieldset id="custInfo" class="container border">
+            <legend class="rounded">Customer Information</legend>
+      
+            <div class="formRow">
+               <label for="name">Name*</label>
+               <input name="custName" id="name" type="text" placeholder="first and last name" required />
+            </div>
+      
+            <div class="formRow">
+               <label for="street">Street Name</label>
+               <input name="custStreet" id="street" type="text" />
+            </div>
+                 
+            <div class="formRow">
+               <label for="city">City</label>
+               <input name="custCity" id="city" type="text" />
+            </div>
+      
+            <div class="formRow">
+               <label for="state">State</label>
+               <input name="custState" id="state" type="text" />
+            </div>
+      
+            <div class="formRow">
+               <label for="zip">Postal code</label>
+               <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)" pattern="^\d{6}$" />
+            </div>
+      
+            <div class="formRow">
+               <label for="phone">Phone number</label>
+               <input name="custPhone" id="phone" type="tel" />
+            </div>
+      
+            <div class="formRow">
+               <label for="mail">Email*</label>
+               <input name="custEmail" id="mail" type="email" required/>
+            </div>
+      
+            <input name="mailMe" id="mailCB" value="yes" type="checkbox" checked/>
+            <label for="mailCB">Add me to your mailing list</label>
+      
+         </fieldset>
+      
+         <fieldset id="expInfo" class="container border">
+            <legend class="rounded">Please tell us if you have any experience in this field.</legend>
+
+            <div class="formRow">
+               <label for="study">Last study date</label>
+               <input name="studyDate" id="study" type="date" />
+            </div>
+
+            <label for="commBox">What have you studied?</label>
+            <textarea name="topicsStudied" id="commBox"></textarea>
+
+         </fieldset>
+   
+                 
+         <fieldset id="serviceSelection" class="container border">
+            <legend class="rounded">Please choose your registration type.</legend>
+
+            <div class="formRow">
+               <label>Choose type of registration</label>
+               <fieldset class="optGroup">
+                  <label for="training">Training</label>
+                  <input name="sFriend" id="Train" value="training" type="radio" />
+                  <label for="consultation">Consultation</label>
+                  <input name="sFriend" id="Consult" value="consultation" type="radio" />
+            </div>
+      
+            <div class="formRow">
+               <label for="dates">Choose Dates<br />(Select up to 3)</label>
+               <select name="Date" id="date" size="7" multiple>
+                  <option value="monday">Monday</option>
+                  <option value="tuesday">Tuesday</option>
+                  <option value="wednesday">Wednesday</option>
+                  <option value="thursday">Thursday</option>
+                  <option value="friday">Friday</option>
+                  <option value="saturday">Saturday</option>
+                  <option value="sunday">Sunday</option>
+               </select>
+            </div>
+      
+            <div class="formRow">
+               <label for="time">Select Time for first date selected</label>
+               <select name="timeType" id="time">
+                  <option value="time1">-</option>
+                  <option value="time2">10am-12pm</option>
+                  <option value="time3">12pm-2pm</option>
+                  <option value="time4">2pm-4pm</option>
+                  <option value="time5">4pm-6pm</option>
+                  <option value="time6">6pm-8pm</option>
+                  <option value="time7">8pm-10pm</option>
+               </select>
+            </div>
+   
+            <div class="formRow">
+               <label for="time">Select Time for second date selected</label>
+               <select name="timeType" id="time">
+                  <option value="time1">-</option>
+                  <option value="time2">10am-12pm</option>
+                  <option value="time3">12pm-2pm</option>
+                  <option value="time4">2pm-4pm</option>
+                  <option value="time5">4pm-6pm</option>
+                  <option value="time6">6pm-8pm</option>
+                  <option value="time7">8pm-10pm</option>
+               </select>
+            </div>
+   
+            <div class="formRow">
+               <label for="time">Select Time for third date selected</label>
+               <select name="timeType" id="time">
+                  <option value="time1">-</option>
+                  <option value="time2">10am-12pm</option>
+                  <option value="time3">12pm-2pm</option>
+                  <option value="time4">2pm-4pm</option>
+                  <option value="time5">4pm-6pm</option>
+                  <option value="time6">6pm-8pm</option>
+                  <option value="time7">8pm-10pm</option>
+               </select>
+            </div>
+      
+         </fieldset>
+            
+               
+         <div id="buttons">
+            <input type="submit" value="Submit the form" class="rounded" />
+            <input type="reset" value="Cancel" class="rounded" />
+         </div>
+      </form>
+   </section>
+   
+   
+   
+</body>
+
+<footer>
+   <ul class="nav bg-dark">
+     <li class="nav-item col-3">
+       <a class="nav-link text-center text-white" href="#">Privacy Policy</a>
+       <a class="nav-link text-center text-white" href="#">Terms of Use</a>
+       <a class="nav-link text-center text-white" href="#">Site Map</a>
+     </li>
+     <li class="nav-item col-3">
+       <a class="nav-link text-center text-white" href="#">Staff</a>
+       <a class="nav-link text-center text-white" href="contact_us.html">Contact Us</a>
+       <a class="nav-link text-center text-white" href="#">Blog</a>
+     </li>
+     <li class="nav-item col-3">
+       <a class="nav-link text-center text-white" href="#">Facebook</a>
+       <a class="nav-link text-center text-white" href="#">Instagram</a>
+       <a class="nav-link text-center text-white" href="#">Twitter</a>
+     </li>
+   </ul>
+ </footer>

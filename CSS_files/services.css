@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/*
+   CA2 
+   Author: Bryan Ng
+   Date: 30 July 2020
+   
+   Services Layout Styles
+   Filename: services.css
+
+*/
+
+/* html style */
+html {
+    background-color: rgb(100, 130, 160);
+}
+
+/* nav style */
+ul.nav a:hover {
+    background-color: grey;
+ }
+ 
+ /* Structural Styles */
+ 
+ body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1020px;
+    min-width: 640px;
+    min-height: 1020px;
+    background-image: url(analytics.png), url(matrix1.png);
+    background-repeat: no-repeat, repeat-x;
+    background-position: bottom, top;
+ }
+
+ .carousel-inner img {
+     margin: auto;
+ }
+ 
+ footer {
+     clear: both;
+ }
+ 
+ address, article, aside, blockquote, body, cite, 
+ div, dl, dt, dd, em, figcaption, figure, footer, 
+ h1, h2, h3, h4, h5, h6, header, html, img, 
+ li, main, nav, ol, p, section, span, ul {
+ 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;  
+ }
